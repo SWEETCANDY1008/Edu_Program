@@ -1,0 +1,16 @@
+<div id="in_section_compiler">
+    <div id="sec_1" >
+        <div id="editor"># 여기에 코드를 작성하세요.
+<%- code %></div>
+    </div>
+	<div id="buttons">
+		<input id='run' type='button' value='RUN' onclick="submitCheck('run', 'run', 'check')">
+		<input id='check' type='button' value='CHECK' onclick="submitCheck('check', 'check', 'run')">
+	</div>
+    <div id="sec_2">
+        <div id="editor_run">Loading....</div>
+        <script>
+	 		make_editor();
+        </script>
+    </div>
+</div>

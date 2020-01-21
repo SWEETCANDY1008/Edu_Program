@@ -1,0 +1,157 @@
+body {
+	min-height: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: #719192;
+	margin: 0;
+}
+
+div#wapper {
+	min-height: 100%;
+	height: 100%;
+	width: 100%;
+	text-align: left;
+	min-height: 300px;
+	margin: 0 auto;
+}
+
+header {
+	background-color: #3c4245;
+	text-align: center;
+	vertical-align: middle;
+	left:0px;
+	top:0px;
+	height:5%;
+	width:100%;
+	position: fixed;
+	border: 1px solid #999;
+}
+
+header div {
+	margin: 10px;
+	text-align: center;
+}
+
+header div a {
+	text-decoration: none;
+	color: #dfcdc3;
+}
+
+footer {
+	background-color: #3c4245;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:5%;
+	width:100%;
+	border: 1px solid #999;
+	text-align: center;
+}
+
+footer #footer_button {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	height: 100%;
+	margin: 10px;
+	text-align: center;
+}
+
+footer #footer_button #round {
+	text-align: right;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+section#content_section {
+	color: #dfcdc3;
+	left: 0;
+	top:0px;
+	margin-top:60px;
+	margin-bottom:60px;
+	position: fixed;
+	height: 85%;
+	border: 1px solid #999;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+	background-color: #5f6769;
+}
+
+aside #navigation {
+	height:100%;
+	width: 0;
+	position: fixed;
+	z-index:1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,154,200);
+	overflow-x: hidden;
+	transition:0.5s ease-in-out;
+	padding-top: 10px;
+}
+
+aside #navigation a {
+	text-decoration: none;
+	color: #dfcdc3;
+}
+
+aside #navigation div {
+	padding-left: 10px;
+}
+
+aside #navigation #closebutton {
+	padding: 8px 8px 8px 32px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #fff;
+	display: block;
+	transition: 0.2s ease-in-out;
+	text-align: right;
+}
+
+#content_section #in_section_1 {
+	overflow-y: scroll;
+	overflow-x: fixed;
+	padding: 20px;
+}
+
+#content_section #in_section_1, #in_section_compiler {
+    border: 1px solid gray;
+}
+
+#content_section #in_section_compiler {
+    display: grid;
+    grid-template-rows: 1fr 0.1fr 1fr;
+}
+
+#content_section #in_section_compiler #sec_1, #sec_2 {
+    border: 1px solid gray;
+}
+
+#content_section #in_section_compiler #sec_1 #editor{
+    border-top: 1px solid gray;
+    height: 90%;
+    display: block;
+}
+
+#content_section #in_section_compiler #buttons {
+    margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#content_section #in_section_compiler #sec_2 #editor_run{
+    border-top: 1px solid gray;
+    height: 90%;
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+

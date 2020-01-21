@@ -1,0 +1,13 @@
+<div>
+    <% directorys.forEach(function(directory, index) { %>
+        <p><%= directory %>장</p>
+        <ul>
+            <% files[directory].forEach(function(file, index) { %>
+                <% var fileLength = file.length; %>
+                <% var lastDot = file.lastIndexOf('.'); %>
+                <% var fileExtension = file.substring(0, lastDot); %>
+                <li><a href='/<%= directory %>/<%= fileExtension %>'><%= fileExtension %>단원</a></li>
+            <% }) %>
+        </ul>
+    <% }) %>
+</div>

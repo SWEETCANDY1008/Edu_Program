@@ -1,0 +1,58 @@
+<div id="footer_button">
+	<div><input type='button' value='nav' onclick="openNav()"></div>
+	<div>단원이름 혹은 다른거</div>
+	<div id="round" style="display: flat">
+		<div><button id="previous" type="button">PREVIOUS</button></div>
+		<!-- <input id="previousround" type='button' value='previous'> -->
+		<div id="page_num"></div>
+		<div><button id="next" type="button">NEXT</button></div>
+		<!-- <input id="nextround" type='button' value='next'> -->
+	</div>
+</div>
+
+<script>
+// 마지막 단원과 현재 페이지가 같을 경우 뒤로가기만 가능하게 해야함
+// 같지 않을경우(중간정도 페이지) 뒤로가기 및 앞으로가기
+// 첫번째 페이지일 경우, 앞으로가기만 되게 해야함
+// 단 첫번째 페이지이자 마지막페이지일 경우 뒤로가기도 앞으로가기도 동작하지 않아야 함.
+
+function moving_page(para, now_page, num, tag) {
+	var page = Number(now_page) + num;
+	page = page.toString();
+	
+	var link = para[0] + "//" + para[1] + "/" + para[2] + "/" + para[3] + "/" + page;
+	console.log(link)
+
+	document.getElementById(tag).onclick = function(){
+		location.replace(link);
+	}
+}
+
+var para = document.location.href.split("/");
+// para[3] == 단원 이름
+// para[4] == 페이지 이름
+
+// 마지막 단원
+var last_page = <%= filelength %>;
+
+// 현재 페이지
+var now_page = para[4];
+
+if(now_page == last_page && last_page > 1) {
+	// 마지막 단원과 현재 페이지가 같을 경우 뒤로가기만 가능하게 해야함
+	moving_page(para, now_page, -1, 'previous');
+} else if(now_page != last_page && now_page != "1") {
+	// 같지 않을경우(중간정도 페이지) 뒤로가기 및 앞으로가기
+	moving_page(para, now_page, -1, 'previous');
+	moving_page(para, now_page, 1, 'next');
+} else if(now_page === "1") {
+	// 첫번째 페이지일 경우, 앞으로가기만 되게 해야함
+	// 단 첫번째 페이지이자 마지막페이지일 경우 뒤로가기도 앞으로가기도 동작하지 않아야 함.
+	if(last_page > 1) {
+		moving_page(para, now_page, 1, 'next');
+	}
+}
+
+document.getElementById("page_num").innerHTML = now_page + "/" + last_page;
+
+</script>
