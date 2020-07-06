@@ -1,40 +1,41 @@
 <div id="in_section_1">
-<h1>산술연산자 - 1</h1>
-<p>파이썬에서는 여러 산술연산자를 통해 수를 계산할 수 있습니다.</p>
-<pre class="hljs"><code>	a = <span class="hljs-number">5</span>
-	b = <span class="hljs-number">7</span>
-	c = a + b
-	print(c)	<span class="hljs-comment"># 12</span>
+<h1>변수 및 할당문</h1>
+<h2>기본설명</h2>
+<p>앞의 단원에서 a = 5 이런식으로 작성하는 모습을 봤습니다.</p>
+<p>이렇게 <strong>“=”</strong> 과 특정 영문자로 연결하는 과정에서 특정 영문자를 <strong>“변수”</strong> , 뒤에 쓰여지는 것을 <strong>“값”</strong> 그리고 <strong>“변수”</strong> 와 <strong>“값”</strong> 을 연결하는 것을 <strong>“변수 할당”</strong> 이라고 부릅니다.</p>
+<p>다음 예제를 보도록 하겠습니다.</p>
+<pre class="hljs"><code>n = <span class="hljs-number">17</span>
+pi = <span class="hljs-number">3.14</span>
+message = <span class="hljs-string">"파이썬 좋아요!"</span>
 </code></pre>
+<p>위와 같이 숫자뿐만 아니라 문자열도 값으로 변수에 할당할 수 있습니다.</p>
 <h1>직접 해보기</h1>
-<p>이번에는 다음 주어진 계산을 직접 작성해보세요. 값은 한줄 간격으로 출력되게 해야합니다.</p>
-<ul>
-<li>40 + 2</li>
-<li>84 / 2</li>
-<li>6 ** 2</li>
-</ul>
+<p>title이란 변수에 MineSweeper란 문자열을 할당하세요
+row와 col에 각각 10을 할당하세요</p>
+<p>그 후 title과 row의 변수형을 확인해보세요
+※ 변수형을 확인하는 함수는 type(변수명) 입니다.</p>
 
 </div>
 
 <div id="in_section_compiler">
     <div id="sec_1" >
         <div id="editor"># 여기에 코드를 작성하세요.
-a = 5
-b = 7
-c = a + b
-print(c)
-</div>
+title = ""
+row = 
+col = 
+
+print(type())
+print(type())</div>
     </div>
 	<div id="buttons">
-		<input id='run' type='button' value='RUN' onclick="submitCheck('run', 'run', 'check')">
-		<input id='check' type='button' value='CHECK' onclick="submitCheck('check', 'check', 'run')">
+        <input id='check' type='button' value='CHECK' onclick="submitCheck('check', 'check')">
+        <input id='answer' type='button' value='ANSWER' onclick="submit_answer()">
 	</div>
     <div id="sec_2">
         <div id="editor_run">Loading....</div>
         <script>
-	 		make_editor();
+             make_editor();
+             make_editor_run();
         </script>
     </div>
 </div>
-
-<!-- 여기서 id값으로 판정해서 컴파일러와 다른것을 나타낼 수 있는 if문 비슷하게 구현하면 될 것 같음. -->

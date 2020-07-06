@@ -10,7 +10,9 @@ function make_editor() {
 	editor.setTheme("ace/theme/monokai");
 	editor.session.setMode("ace/mode/python");
 	editor.setFontSize("18px");
+}
 
+function make_editor_run() {
 	var editor_run = ace.edit("editor_run");
 	editor_run.setTheme("ace/theme/monokai");
 	editor_run.session.setMode("ace/mode/python");

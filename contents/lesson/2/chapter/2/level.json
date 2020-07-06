@@ -1,0 +1,18 @@
+{
+    "easy": {
+        "row": 10,
+        "col": 10,
+        "mine": 10
+    },
+    "normal": {
+        "row": 20,
+        "col": 20,
+        "mine": 20
+    },
+    "hard": {
+        "row": 30,
+        "col": 30,
+        "mine": 30
+    }
+}
+

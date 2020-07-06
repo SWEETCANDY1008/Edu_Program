@@ -1,0 +1,6 @@
+title = "MineSweeper"
+row = 10
+col = 10
+
+print(type(title))
+print(type(row))

@@ -1,4 +1,6 @@
-a = 5
-b = 7
-c = a + b
-print(c)
+title = ""
+row = 
+col = 
+
+print(type())
+print(type())

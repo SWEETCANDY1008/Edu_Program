@@ -1,0 +1,68 @@
+<div id="in_section_1">
+<h1>값과 표현식</h1>
+<h2>기본설명</h2>
+<ul>
+<li>값: 숫자, 문자열, 리스트 등 프로그램이 다루는 기본 대상</li>
+<li>표현식: 값, 변수, 함수의 조합으로 생성된 대상</li>
+<li>표현식 예제</li>
+</ul>
+<pre class="hljs"><code><span class="hljs-number">2</span>
+<span class="hljs-string">"Hello World!"</span>
+x
+x/<span class="hljs-number">5</span> + f(x, y) + <span class="hljs-number">2</span>**<span class="hljs-number">3</span>
+</code></pre>
+<h1>문장과 명령문</h1>
+<h2>기본설명</h2>
+<ul>
+<li>문장: 컴퓨터에 어떤 효과를 발생시키는 코딩의 기본 단위.
+<ul>
+<li>문장 예제
+<ul>
+<li>변수 순언</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<pre class="hljs"><code>n = 17
+</code></pre>
+<ul>
+<li>출력문</li>
+</ul>
+<pre class="hljs"><code>print(n)
+</code></pre>
+<ul>
+<li>명령문: 문장을 <code>if</code>, <code>for</code>, <code>while</code> 등과 함께 함께 규칙에 맞게 이어서 만든 결과물
+<ul>
+<li>명령문 예제</li>
+</ul>
+</li>
+</ul>
+<pre class="hljs"><code>n = <span class="hljs-number">17</span>
+x = n + <span class="hljs-number">3</span>
+<span class="hljs-keyword">if</span> x &lt; <span class="hljs-number">30</span>:
+    x = x + <span class="hljs-number">3</span>
+<span class="hljs-keyword">else</span>:
+    print(x) 
+</code></pre>
+<h1>직접 해보기</h1>
+
+</div>
+
+<div id="in_section_compiler">
+    <div id="sec_1" >
+        <div id="editor"># 여기에 코드를 작성하세요.
+</div>
+    </div>
+	<div id="buttons">
+        <input id='check' type='button' value='CHECK' onclick="submitCheck('check', 'check')">
+        <input id='answer' type='button' value='ANSWER' onclick="submit_answer()">
+	</div>
+    <div id="sec_2">
+        <div id="editor_run">Loading....</div>
+        <script>
+             make_editor();
+             make_editor_run();
+        </script>
+    </div>
+</div>

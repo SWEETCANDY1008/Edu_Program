@@ -4,13 +4,14 @@
 <%- code %></div>
     </div>
 	<div id="buttons">
-		<input id='run' type='button' value='RUN' onclick="submitCheck('run', 'run', 'check')">
-		<input id='check' type='button' value='CHECK' onclick="submitCheck('check', 'check', 'run')">
+        <input id='check' type='button' value='CHECK' onclick="submitCheck('check', 'check')">
+        <input id='answer' type='button' value='ANSWER' onclick="submit_answer()">
 	</div>
     <div id="sec_2">
         <div id="editor_run">Loading....</div>
         <script>
-	 		make_editor();
+             make_editor();
+             make_editor_run();
         </script>
     </div>
 </div>
